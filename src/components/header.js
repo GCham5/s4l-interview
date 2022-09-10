@@ -2,25 +2,33 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ menuLinks }) => (
   <header
     style={{
       margin: `0 auto`,
       padding: `var(--space-4) var(--size-gutter)`,
       display: `flex`,
-      alignItems: `center`,
+      alignItems: `baseline`,
       justifyContent: `space-between`,
+      background: `#d9bebe`
     }}
   >
-    <Link
-      to="/"
-      style={{
-        fontSize: `var(--font-sm)`,
-        textDecoration: `none`,
-      }}
-    >
-      {siteTitle}
-    </Link>
+    <div style={{height: `55px`}}>
+      <nav>
+        <ul style={{ display: "flex"}}>
+        {menuLinks.map((link) => (
+          <li style={{
+            listStyleType: `none`,
+            padding: `1rem`,
+          }}>
+            <Link to={link.link} style={{ textDecoration: `none`}}>
+              {link.name}
+            </Link>
+          </li>
+        ))}
+        </ul>
+      </nav>
+    </div>
     <img
       alt="Gatsby logo"
       height={20}

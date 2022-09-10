@@ -1,3 +1,15 @@
+# Software For Love Challenge 
+
+## Name: Georges Chamoun
+
+Hello! For the challenge, I kept this relatively simple. I simply removed the existing `siteTitle` link and replaced it with `Home`. I also changed the background of the header to make it stand out. 
+
+To stay consisent with the starter code, I decided to use GraphQL to query the names and links of the nav items. To do this, I added them to the `gatsby-config.js` file. This was inspired by the following [docs](https://www.gatsbyjs.com/docs/creating-dynamic-navigation/).
+
+
+
+
+----
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
