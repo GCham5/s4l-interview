@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-const Header = ({ menuLinks, siteTitle }) => (
+const Header = ({ menuLinks }) => (
   <header
     style={{
       margin: `0 auto`,
@@ -13,15 +13,6 @@ const Header = ({ menuLinks, siteTitle }) => (
       background: `#d9bebe`
     }}
   >
-    {/* <Link
-      to="/"
-      style={{
-        fontSize: `var(--font-sm)`,
-        textDecoration: `none`,
-      }}
-    >
-      {siteTitle}
-    </Link> */}
     <div style={{height: `55px`}}>
       <nav>
         <ul style={{ display: "flex"}}>
